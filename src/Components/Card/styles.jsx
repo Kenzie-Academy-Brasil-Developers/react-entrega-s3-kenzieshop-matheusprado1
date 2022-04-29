@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Container = styled.div`
+export const Container = styled.div`
   background-color: #fffffd;
   width: 230px;
   height: 250px;
@@ -20,4 +20,4 @@ const Container = styled.div`
     margin: 2px 0px;
   }
 `;
-export default Container;
+

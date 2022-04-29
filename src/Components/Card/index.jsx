@@ -25,7 +25,7 @@ const Card = ({ cart, product }) => {
       {cart ? (
         <Button onClick={handleClickRemove}>Remover</Button>
       ) : (
-        <Button onClick={handleClickAdd}>Remover</Button>
+        <Button onClick={handleClickAdd}>Adicionar no carrinho</Button>
       )}
     </Container>
   );

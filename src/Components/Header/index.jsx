@@ -2,7 +2,7 @@ import { StyledHeader } from "./styles";
 
 import { useHistory } from "react-router-dom";
 
-import { FishoppingCart, FiLogin } from "react-icons/fi";
+import { FiShoppingCart, FiLogIn } from "react-icons/fi";
 
 import { useSelector } from "react-redux";
 
@@ -16,14 +16,14 @@ const Header = () => {
     <StyledHeader>
       <h2 onClick={() => history.push("/")}>Kenzie Shop</h2>
       <div>
-        <FishoppingCart onClick={() => history.push("/cart")} />
+        <FiShoppingCart onClick={() => history.push("/cart")} />
         {quantity > 0 && (
           <section>
             <span>{`${quantity}`}</span>
           </section>
         )}
         <p>Carrinho</p>
-        <FiLogin />
+        <FiLogIn />
         <p>Entrar</p>
       </div>
     </StyledHeader>
