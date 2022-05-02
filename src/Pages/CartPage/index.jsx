@@ -22,9 +22,9 @@ const CartPage = () => {
         <aside>
           <h3>Resumo do pedido</h3>
           {quantity > 1 || quantity === 0 ? (
-            <p>{`${quantity}produtos`}</p>
+            <p>{`${quantity} produtos`}</p>
           ) : (
-            <p>{`${quantity}produto`}</p>
+            <p>{`${quantity} produto`}</p>
           )}
           <span>{`R$ ${price.toFixed(2)}`}</span>
           <Button onClick finish>

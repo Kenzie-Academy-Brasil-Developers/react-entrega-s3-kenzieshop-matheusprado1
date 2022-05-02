@@ -19,6 +19,7 @@ export const Container = styled.div`
     button {
       margin-top: 10px;
     }
+    
   }
   @media (min-width: 1024px) {
     position: relative;

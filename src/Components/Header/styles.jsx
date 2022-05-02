@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   width: 100%;
-  height: 30px;
+  height: 60px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -19,15 +19,21 @@ export const StyledHeader = styled.header`
   section {
     top: 12px;
     right: 440px;
-    background-color: #6495ed;
-    width: 12px;
-    height: 12px;
-    font-size: 10px;
+    background-color: #001f36;
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
     color: #fff;
-    border-radius: 100px;
+    border-radius: 20px;
     text-align: center;
+    
     font-weight: 600;
     margin: 2px 0px 0px -10px;
   }
+  .cart-icon, .login-icon {
+    cursor: pointer;
+    width: 30px;
+    height: 16px;
+  }
+  
 `;
-

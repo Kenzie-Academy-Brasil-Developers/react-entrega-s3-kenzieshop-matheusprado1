@@ -15,16 +15,18 @@ const Header = () => {
   return (
     <StyledHeader>
       <h2 onClick={() => history.push("/")}>Kenzie Shop</h2>
-      <div>
-        <FiShoppingCart onClick={() => history.push("/cart")} />
+      <div className="icons-div">
+        <FiShoppingCart
+          className="cart-icon"
+          onClick={() => history.push("/cart")}
+        />
         {quantity > 0 && (
           <section>
             <span>{`${quantity}`}</span>
           </section>
         )}
-        <p>Carrinho</p>
-        <FiLogIn />
-        <p>Entrar</p>
+
+        <FiLogIn className="login-icon"/>
       </div>
     </StyledHeader>
   );
